@@ -1,4 +1,5 @@
 use v6;
 
-sub recur($n) { say $n; recur($n-1) if $n>0; }
-recur(12);
+my $x = 0;
+sub recur($n) { say $x++; recur($n-1) if $n>0; recur($n-1) if $n>0; }
+recur(9);
