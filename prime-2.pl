@@ -16,4 +16,4 @@ my sub next-prime(*@primes) {
 
 my @primes := 2, 3, &next-prime ... *;
 
-say @primes.munch(350).perl;
+say @primes[^350].perl;
