@@ -7,6 +7,5 @@ my sub next-prime(*@primes) {
     }
 }
 
-my @primes := 2, 3, &next-prime ... *;
+say (2, 3, &next-prime ... 541).perl;
 
-say @primes[^100].perl;
